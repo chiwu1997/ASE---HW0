@@ -1,0 +1,12 @@
+# Function dependencies, for example:
+# package>=version
+
+python-binance
+finlab_crypto==0.2.5
+talib-binary==0.4.19
+numpy
+
+oauth2client
+gspread
+
+requests

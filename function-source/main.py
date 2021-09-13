@@ -90,7 +90,7 @@ def main(request):
     my_data = {
       "id": "aa919b86-17c7-4777-b189-c54d6a44bc1b",
       "action": "{}".format(signal),
-      "stop_loss_exact_price": str(close_price - 1000),
+      "stop_loss_exact_price": str(close_price - 500),
       "take_profit_exact_price": str(close_price + 3000)
     }
     order = requests.post('https://mudrex.com/api/v1/signals', json = my_data)
@@ -112,7 +112,7 @@ def main(request):
     my_data = {
       "id": "aa919b86-17c7-4777-b189-c54d6a44bc1b",
       "action": "{}".format(signal),
-      "stop_loss_exact_price": str(close_price + 1000),
+      "stop_loss_exact_price": str(close_price + 500),
       "take_profit_exact_price": str(close_price - 3000)
     }
     order = requests.post('https://mudrex.com/api/v1/signals', json = my_data)
